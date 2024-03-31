@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    .searchInputStyles{
+        @apply h-[38px] w-[257px] flex items-center bg-[#F1F1F5] p-2 rounded-lg
+    }
+
+    .btnStyles{
+        @apply bg-[#DB9E04] min-[650px]:w-[119.7px] w-[80px] min-[650px]:h-[41px] h-[29px] rounded-[8px] font-open mt-2 min-[650px]:text-[14px] text-[10px] font-[400] text-[#ffff]
+    }
+
+    .tableHead{
+        @apply w-[100%] bg-[#F1F1F5] rounded-lg
+    }
+
+    .indicator{
+        @apply w-[34px] h-[34px] rounded-[50%] bg-[#EFF0F6] text-[#6F6C90] font-open text-[1rem]
+    }
+
+    .active-indicator{
+        @apply w-[34px] h-[34px] rounded-[50%] bg-[#DB9E04] text-[#fff] font-open text-[1rem]
+    }
+
+    .indicator-line{
+        @apply w-[98px] rounded-md h-[6px] bg-[#EFF0F6] relative before:rounded-md before:content-[''] before:w-[50%] before:h-[6px] before:bg-[#DB9E04] before:absolute before:left-0
+    }
+
+    .indicator-lineFull{
+        @apply w-[98px] rounded-md h-[6px] bg-[#EFF0F6] relative before:rounded-md before:content-[''] before:w-[100%] before:h-[6px] before:bg-[#DB9E04] before:absolute before:left-0
+    }
+
+    .product-image{
+        @apply md:w-[160px] md:h-[168px] w-[130px] h-[147px] outline-none bg-[#fdfaf2] border-dashed border-2 p-2 rounded-lg border-[#DB9E04]
+    }
+
+    .table-text{
+        @apply text-[#000] text-[13.32px] leading-5 font-[600]
+    }
+
+    .dropdown-text{
+        @apply cursor-pointer text-[12px] leading-[15px] p-2 font-[500]
+    }
+
+    .pagination{
+        @apply flex items-center gap-2 justify-end mt-4
+    }
+
+    .disableBtn{
+        @apply w-[24px] h-[24px] flex items-center bg-[#c5ccd3] justify-center text-[#fff] 
+    }
+
+    .mobile-table-text{
+        @apply font-open font-[700] min-[500px]:text-[15px] text-[13px] leading-4 text-[#000] mt-3
+    }
+
+    .mobile-table-subtext{
+        @apply font-open font-[400] min-[500px]:text-[15px] text-[13px] text-[#000] leading-4 mt-2
+    }
+
+    .image-select{
+        @apply md:w-[177px] md:h-[122px] w-[160px] h-[122px] outline-none bg-[#fdfaf2] border-dashed border-2 p-2 rounded-lg border-[#DB9E04]
+    }
+}
